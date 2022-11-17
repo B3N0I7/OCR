@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact - Pulchra Flores</title>
+		<link rel="stylesheet" type="text/css" href="style/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" alt="Logo du site Pulchra Flores" title="Bienvenue sur le site Pulchra Flores" />
+	</header>
+	<main>
+		<nav>
+			<div class="navigation">
+				<ul>
+					<li>
+						<a href="index.html">Acceuil</a>
+					</li>
+					<li>
+						<a href="commande.html">Commande</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>			
+		</nav>
+		<section class="formulaire">
+			<form method="post" action="envoi_formulaire.php">
+				<div class="form-nom">
+					<label for="nomvisiteur">Votre nom</label>
+					<input type="text" name="nomvisiteur" id="nomvisiteru" />
+				</div>
+				<div class="form-objet">
+					<label for="objet">Quel est l'objet de votre question ?</label><br />
+       				<select name="objet" id="objet">
+           				<option value="Objet 1">Objet 1</option>
+           				<option value="Objet 2">Objet 2</option>
+           				<option value="Objet 3">Objet 3</option>
+           				<option value="Autre objet">Autre objet</option>
+           			</select>
+				</div>
+				<div class="form-question">
+					<label for="textevisiteur">Posez votre question :</label><br />
+       					<textarea name="textevisiteur" id="textevisiteur"></textarea>
+				</div>
+				<p>
+					<br />
+					<input type="submit" name="boutonenvoi" value="Envoyer">
+				</p>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<img class="logo_insta" src="images/insta.png" alt="Logo Instagram" title="Venez voir mes compositions sur Instagram" />
+		<img class="logo_whats" src="images/whats.png" alt="Logo Whatsapp" title="Venez me poser une question sur WhatsApp" />
+	</footer>
+</body>
+</html>
